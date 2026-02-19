@@ -1,0 +1,35 @@
+<!Doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="color-scheme" content="light dark">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
+    <script src="{{ url_for('static', filename='main.js') }}"></script>
+    <title>학사모 - 학사일정 캘린더 연동</title>
+  </head>
+  <body>
+    <br>
+    <main class="container">
+      <center>
+        <h2>학사일정 캘린더 연동</h2>
+        <input type="url" id="url" placeholder="학교 홈페이지 URL">
+        <h6>예시) 수원고 - https://suwon-h.goesw.kr/<br> 화성고 - https://hwasung-h.goehs.kr/</h6>
+        <button class="secondary" id='start' onClick='start()'>시작하기</button>
+        
+        <div>
+          <br>
+          <article>
+            <div id='link'></div>
+              
+            <div id='info'>
+            * 경기도 교육청 소속 학교만 지원 (일부 학교는 지원 안 될 수도 있음) <br>
+            ** 본 프로그램은 구글 캘린더 등 타 캘린더와 연동할 수 있는 ics 링크를 만들어주는 것임 <br>
+            *** 학사 일정은 학교 홈페이지의 일정을 기준으로 함
+           </div>
+          </article>
+        </div>
+      </center>
+    </main>
+  </body>
+</html>
